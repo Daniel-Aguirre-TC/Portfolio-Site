@@ -1,0 +1,30 @@
+
+h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.padTop{
+    margin-top: 30px;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    padding: 10px;
+  }
+  .left {
+    float: left;
+    width: 300px;
+    padding: 10px;
+  }
+  .center {
+    text-align: center;
+  }
+
+  .centerMargin{
+    margin: auto;
+    width: 90;
+    padding: 10px;
+  }
+
+
