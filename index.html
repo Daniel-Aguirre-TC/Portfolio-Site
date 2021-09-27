@@ -14,59 +14,100 @@
     <link rel="stylesheet" href="Main.css">
 
 </head>
-<body>
+    <body>
     <!-- Navigation Bar -->
     <nav>       
     <!-- Links to different sections -->
     </nav>
     
     <!-- Name, Headshot, Contact Info -->
-    <section class= "container">   
-        <!--My Name-->
-        <h1>Daniel Aguirre</h1>
+    <section id="name-headshot-contact" class= "container-fluid">   
         <div class="row centerMargin">
             <div class="col-md center">
-                <!-- My Headshot-->
-                <img class="rounded-circle" src="Images/CroppedHeadshot.jpg" alt="Unable to load image at this time." img width = "200">         
+                <!-- My Headshot & Name -->
+                <img id= "my-headshot" src="Images/CroppedHeadshot.jpg" alt="Unable to load image at this time." img width = "200"> 
+                <h1 id="my-name">Daniel Aguirre</h1>        
             </div>
-            <div class="col-md centerMargin">
-                <div class="card text-white bg-primary mb-3" style="max-width: 25rem; margin-top: 35px;">
-                    <!-- Contact Info-->
-                    <div class="card-header center" style="font-size: 175%;"><strong>Contact Info</strong></div>
-                    <div class="card-body">
-                        <p class="card-text"><strong>
-                        Phone Number: 1234567890<br>
-                        Email Address: GetARealEmail@GetADomain?.com<br>
-                        <a href = "https://www.linkedin.com/in/daniel-aguirre-/" target="_blank" rel="noopener noreferrer" style="color:cyan; ;">
-                        <u>Check Out My LinkedIn!</u>
-                    </a></strong>
-            </div>            
+            <div class="col-md container">
+                <!-- Contact Card -->                
+                <div id="contact-card" class="card">
+                    <div id="contact-card-header" class="card-header">
+                        Contact Info
+                    </div>
+                    <div id="contact-card-contents" class="card-body">
+                        <p class="card-text">
+                            Phone Number: 1234567890<br>
+                            Email Address: GetARealEmail@GetADomain?.com<br>
+                            Check Out My <a href = "https://www.linkedin.com/in/daniel-aguirre-/" target="_blank" rel="noopener noreferrer">
+                            <u>LinkedIn!</u> </a>
+                    </div>            
+                </div>               
+            
+            </div>
         </div>
     </section>
 
     <!-- Highlighted Projects Slideshow -->
     <section>
         <!-- Constant GithubLink, slideshow of picture(s)/description -->
-        <div>
-            
-        </div>
+        <div class="card mb-3 center">
+            <h3 class="card-header">Highlighted Projects</h3>
+            <div class="card-body">
+              <h5 class="card-title">Check out some of my favorite personal projects!</h5>
+                <div class="row">
+                    <!-- Diablo II -->
+                    <div class= "col-md">
+                        <p>
+                            <h3>Diablo II Console Edition<br></h3>
+                            <img src="Images/DiabloIIConsoleEdition.JPG" alt="Unable to load image at this time." width="600px"><br>         
+                            This project started as a class assignment to create a Text-Based Adventure game.<br>
+                            Being a huge fan of Diablo II Lord of Destruction, there was an obvious choice of which game to make.<br>
+                            This project is still actively being developed.
+                            <br>Want to see more? You can clone the project <a href = "https://github.com/Daniel-Aguirre-TC/TextAdventurerTwo/tree/mainn" target="_blank" rel="noopener noreferrer">
+                                here</a>.
+                        </p>
+                    </div>
+                    <!-- Math for fun -->
+                    <div class= "col-md">
+                        <p>
+                            <h3>Math For Fun<br></h3>
+                            <img src="Images/MathForFun.JPG" alt="Unable to load image at this time."><br>         
+                            Originally created with my son in mind, this game lets you have fun with math! First choose how many players (one/two). Then choose your difficulty (easy, medium, or hard). Finally, choose your category (addition, subtraction, multiplication, and division). Your score will be calculated based on the difficulty you select, and how large the numbers you're presented are.
+                            <br>Itching to test your math skills? You can clone the project <a href = "https://github.com/Daniel-Aguirre-TC/MathForFun" target="_blank" rel="noopener noreferrer">
+                                here</a>.
+                        </p>
+                    </div>
+                    <!-- Hangman -->
+                    <div class= "col-md">
+                        <p>
+                            <h3>Hangman<br></h3>
+                            <img src="Images/Hangman.JPG" alt="Unable to load image at this time."><br>         
+                            One of my first C# projects, this is a fun re-creation of your favorite childhood game Hangman. The hidden word is selected from a list of words, but I'll make sure you don't get the same word twice until you get some others first.<br>Dying to play? You can clone the project <a href = "https://github.com/Daniel-Aguirre-TC/Hangman" target="_blank" rel="noopener noreferrer">
+                                here</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-link">Click here to check out my Github!</a>
+            </div>
+          </div>
     </section>
-    
-    <!--Work Experience & Skills -->
+            <!--Work Experience & Skills -->
     <section>  
         <!--Work Experience-->            
-        <div class="card mb-3 padTop container centerMargin">
+        <div class="card mb-3 container center">
             <!--Clayton Homes-->
-            <h3 class="card-header center"><strong>Work Experience</strong></h3>
+            <h3 class="card-header"><strong>Work Experience</strong></h3>
             <div class="card-body">
                 <h5 class="card-title"><strong>Clayton Tiny Homes</strong></h5>
                 <h6 class="card-subtitle text-muted">Jul 2018 - Jul 2021 (3 yrs 1 mo) </h6>
             </div>               
-            <div class="card-body">
+            <div class="card-body" style="text-align: left;">
                 <!-- Team Lead Position-->
                 <h5>Team Leader</h5>
-                <p class="card-text">Professional stuff here.
-                <ul>
+                <p class="card-text" >Professional stuff here.
+                <ul">
                     <li>Professional Stuff Here</li>
                     <li>Professional Stuff Here</li>
                     <li>Professional Stuff Here</li>
@@ -74,12 +115,12 @@
                 </p>
             </div>
             <div class="card-footer text-muted"></div>
-            <div class="card-body">
+            <div class="card-body center">
                 <!-- Web.com -->
                 <h5 class="card-title"><strong>Web.com</strong></h5>
                 <h6 class="card-subtitle text-muted">Apr 2016 - Apr 2018 (3 yrs 8 mos)</h6>
             </div>               
-            <div class="card-body">
+            <div class="card-body" style="text-align: left;">
                 <!-- CS Supervisor -->
                 <h5>Customer Support Supervisor</h5>
                 <p class="card-text">Professional stuff here.
@@ -97,48 +138,8 @@
     </section>
 
 
+
     
-
-    <!-- Education -->
-    <section> 
-        <!--Education and Certifications-->    
-        <div class="card mb-3 container padTop centerMargin">
-            <h3 class="card-header center"><strong>Education & Certifications</strong></h3>
-            <div class="card-body">
-                <!-- Certifications-->
-                <h5 class="card-title center"><strong>Certifications</strong></h5>                 
-            </div>
-                <div class= "row center">              
-                    <!-- SQL Cert-->
-                    <div class="col-md">
-                        <img class="rounded-circle" src="Images/SoloLearn_SQL_Cert.png" alt="" img width = "200"> 
-                        <h6 class="card-subtitle text-muted padTop"><strong><em><a href = "https://www.sololearn.com/certificates/course/en/7904217/1060/landscape/png" target="_blank" rel="noopener noreferrer">
-                            <u>View SQL Certificate</u></a></em></strong></h6>   
-                    </div>                   
-                    <!-- C# Cert-->
-                    <div class="col-md">
-                        <img class="rounded-circle" src="Images/SoloLearn_CSharp_Cert.png" alt="" img width = "200"> 
-                        <h6 class="card-subtitle text-muted padTop"><strong><em><a href = "https://www.sololearn.com/certificates/course/en/7904217/1080/landscape/png" target="_blank" rel="noopener noreferrer">
-                            <u>View C# Certificate</u></a></em></strong></h6>   
-                    </div>                   
-                    <!-- HTML Cert-->
-                    <div class="col-md">
-                        <img class="rounded-circle" src="Images/SoloLearn_HTML_Cert.jpg" alt="" img width = "200"> 
-                        <h6 class="card-subtitle text-muted padTop"><strong><em><a href = "https://www.sololearn.com/Certificate/1014-7904217/jpg" target="_blank" rel="noopener noreferrer">
-                            <u>View HTML Certificate</u></a></em></strong></h6>   
-                    </div>       
-                </div>           
-            <div class="card-body center">
-                <!-- Team Lead Position-->
-                <h5>Education</h5>
-                <p class="card-text">
-                    True Coders - <a href = "https://truecoders.io/" target="_blank" rel="noopener noreferrer">Visit Their Site</a> <br>
-                    Florida State College at Jacksonville  - <a href = "https://www.fscj.edu/" target="_blank" rel="noopener noreferrer">Visit Their Site</a>
-                </p>
-            </div>
-        </div>
-
-    </section>
 
 
 

@@ -1,4 +1,65 @@
 
+#name-headshot-contact{
+  background-image: linear-gradient(to bottom right, rgb(73, 73, 73), rgb(151, 151, 151), rgb(63, 63, 63), rgb(151, 151, 151));
+  color: #eca265;
+  text-shadow:  -4px -3px 2px #000000;
+}
+
+#my-headshot{
+
+  border: 6px solid transparent;
+  border-radius: 50%;
+  border-image-slice: 1;
+
+  background-color: rgb(49, 49, 49);
+}
+
+#my-name{
+  margin-bottom:0px;
+  font-weight: 900;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: inherit;
+}
+
+#contact-card{
+  
+  margin-top: 15%;
+  max-width: 25rem;
+  border-width: 3px;
+  border-color: rgb(87, 86, 86);
+  border-style: inset;
+
+  padding: 10px, 10px, 10px, 10px;
+
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right,#773F1A 10%, #eca265 50%, #773F1A 100%);
+  border-image-slice: 1;
+  text-shadow: inherit;
+
+}
+
+#contact-card-header{
+  font-size: 175%;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: inherit;
+  background-image: linear-gradient(to bottom right, rgb(49, 49, 49), rgb(151, 151, 151), rgb(49, 49, 49));
+  border: 0;
+  
+}
+
+#contact-card-contents{
+  font-weight: 700;
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(to right,#773F1A 10%, #eca265 50%, #773F1A 100%);
+  border-image-slice: 1;
+  background-color: rgb(49, 49, 49);
+  overflow:auto;
+
+
+}
+
+
 h1{
     margin-bottom: 30px;
     text-align: center;
@@ -22,9 +83,37 @@ h1{
   }
 
   .centerMargin{
-    margin: auto;
-    width: 90;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 10px;
   }
+
+  .col-container {
+    display: flex;
+    width: 100%;
+}
+/* If the browser window is smaller than 600px, make the columns stack on top of each other */
+@media only screen and (max-width: 50px) {
+  .col {
+    display: block;
+    width: 100%;
+  }
+}
+
+.col{
+  flex: 1;
+  padding: 16px;
+}
+
+.height-50{
+  height: 50px;
+}
+
+img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 
